@@ -1,0 +1,30 @@
+language: objective-c
+osx_image: xcode7.1
+env:
+  global:
+  - LC_CTYPE=en_US.UTF-8
+  - LANG=en_US.UTF-8
+  - WORKSPACE=Appz.xcworkspace
+  - IOS_FRAMEWORK_SCHEME="Appz-ios"
+  - IOS_SDK=iphonesimulator9.1
+  matrix:
+  - DESTINATION="OS=8.1,name=iPhone 4S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+  - DESTINATION="OS=8.2,name=iPhone 5"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+  - DESTINATION="OS=8.3,name=iPhone 5S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+  - DESTINATION="OS=8.4,name=iPhone 6"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+  - DESTINATION="OS=9.1,name=iPhone 6S"          SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
+before_install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+- set -o pipefail
+- xcodebuild -version
+- xcodebuild -showsdks
+- if [ $RUN_TESTS == "YES" ]; then xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME"
+  -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
+  test | xcpretty -c; else xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk
+  "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build
+  | xcpretty -c; fi
+notifications:
+  email: false
+  slack:
+    secure: cFOrUhAxcmcEczP4gNi1uBg9x1LKeY06TVHKBdUn7O/1Bz0VpeUhXzAry2aWq7sG4FEzU1LNdJhE45kWT09UPxkQ0aEue0IPn4R+MrPLe/PolWUerDjIl07dqWZXMl4dWYXbCmHiUG357TV4vL8xM+Bys0OsSx2um0D69oBAuE+j2br4Ag5shqhmJI92bfIAZemttybfBFZq0gmDFwb5V3MwQGaolT0fTKy60Qf+4X55RzxdkpKoRqyz9gTB5/elasNLswvBMLl3ZKqYI+V6TyA8qVEE+fgbIZMjjagcs7x8sZzBe8PHAnb9L+5QOQVjxSt67HDVK3XGDHLXVutSeizGpTfAsQaXLqNauiJ7/rI5g7raZUPsichyHMlZCCxX6WwS4VGkO+EeUYrANu5WUltUSlTQwlm9XN8NJx9daDDxjQPY4JnX2mNH1c4ldO8HLpReowddtJI3dfDL4T6ZqagRceuyNSGAg5n7nPtyYI4AIL4iPdc+2fJZFwcJAkk50PAlySbSANPDuf8Vtg9bd+d0SkmW4g4KSpvHoeHEz4TaLG0vN2+0PF6dR/+gWdN9zz72L2Xj1LhAQU9XEvOryQYzSV4qcbVJZ8LW8xwx0iTkKkT+LxP3+vaRxVIoQrAZc6bNJjUc6Vl9Q7S/9uOu9IyWkJ4aQOjO+almtqBOZnY=

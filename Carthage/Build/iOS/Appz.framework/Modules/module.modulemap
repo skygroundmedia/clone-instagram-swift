@@ -1,0 +1,3 @@
+framework module Appz {
+    header "Appz-Swift.h"
+}

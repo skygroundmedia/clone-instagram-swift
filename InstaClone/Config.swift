@@ -7,8 +7,7 @@
 //
 
 struct Config {
-    
-    //Storyboards
+
     struct storyboard {
         struct MAIN {
             static let name = "Main"

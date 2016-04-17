@@ -15,6 +15,17 @@
 		6B97CCF61CC411A700DB6BB5 /* InstaCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97CCF51CC411A700DB6BB5 /* InstaCloneTests.swift */; };
 		6B97CD011CC411A700DB6BB5 /* InstaCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97CD001CC411A700DB6BB5 /* InstaCloneUITests.swift */; };
 		6B97CD0F1CC4125C00DB6BB5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97CD0E1CC4125C00DB6BB5 /* Config.swift */; };
+		6B97CD111CC417A700DB6BB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD101CC417A700DB6BB5 /* SystemConfiguration.framework */; };
+		6B97CD1D1CC417B900DB6BB5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD121CC417B900DB6BB5 /* Alamofire.framework */; };
+		6B97CD1F1CC417B900DB6BB5 /* Appz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD141CC417B900DB6BB5 /* Appz.framework */; };
+		6B97CD201CC417B900DB6BB5 /* Async.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD151CC417B900DB6BB5 /* Async.framework */; };
+		6B97CD211CC417B900DB6BB5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD161CC417B900DB6BB5 /* Bolts.framework */; };
+		6B97CD221CC417B900DB6BB5 /* Cent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD171CC417B900DB6BB5 /* Cent.framework */; };
+		6B97CD231CC417B900DB6BB5 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD181CC417B900DB6BB5 /* Dollar.framework */; };
+		6B97CD241CC417B900DB6BB5 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD191CC417B900DB6BB5 /* MBProgressHUD.framework */; };
+		6B97CD251CC417B900DB6BB5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1A1CC417B900DB6BB5 /* Parse.framework */; };
+		6B97CD261CC417B900DB6BB5 /* SwiftValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1B1CC417B900DB6BB5 /* SwiftValidator.framework */; };
+		6B97CD271CC417B900DB6BB5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1C1CC417B900DB6BB5 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,18 @@
 		6B97CD001CC411A700DB6BB5 /* InstaCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUITests.swift; sourceTree = "<group>"; };
 		6B97CD021CC411A700DB6BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B97CD0E1CC4125C00DB6BB5 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		6B97CD101CC417A700DB6BB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6B97CD121CC417B900DB6BB5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		6B97CD131CC417B900DB6BB5 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		6B97CD141CC417B900DB6BB5 /* Appz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appz.framework; path = Carthage/Build/iOS/Appz.framework; sourceTree = "<group>"; };
+		6B97CD151CC417B900DB6BB5 /* Async.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Async.framework; path = Carthage/Build/iOS/Async.framework; sourceTree = "<group>"; };
+		6B97CD161CC417B900DB6BB5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		6B97CD171CC417B900DB6BB5 /* Cent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cent.framework; path = Carthage/Build/iOS/Cent.framework; sourceTree = "<group>"; };
+		6B97CD181CC417B900DB6BB5 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
+		6B97CD191CC417B900DB6BB5 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
+		6B97CD1A1CC417B900DB6BB5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
+		6B97CD1B1CC417B900DB6BB5 /* SwiftValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftValidator.framework; path = Carthage/Build/iOS/SwiftValidator.framework; sourceTree = "<group>"; };
+		6B97CD1C1CC417B900DB6BB5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B97CD1D1CC417B900DB6BB5 /* Alamofire.framework in Frameworks */,
+				6B97CD1F1CC417B900DB6BB5 /* Appz.framework in Frameworks */,
+				6B97CD201CC417B900DB6BB5 /* Async.framework in Frameworks */,
+				6B97CD211CC417B900DB6BB5 /* Bolts.framework in Frameworks */,
+				6B97CD221CC417B900DB6BB5 /* Cent.framework in Frameworks */,
+				6B97CD231CC417B900DB6BB5 /* Dollar.framework in Frameworks */,
+				6B97CD241CC417B900DB6BB5 /* MBProgressHUD.framework in Frameworks */,
+				6B97CD251CC417B900DB6BB5 /* Parse.framework in Frameworks */,
+				6B97CD261CC417B900DB6BB5 /* SwiftValidator.framework in Frameworks */,
+				6B97CD271CC417B900DB6BB5 /* SwiftyJSON.framework in Frameworks */,
+				6B97CD111CC417A700DB6BB5 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +113,7 @@
 		6B97CCD41CC411A700DB6BB5 = {
 			isa = PBXGroup;
 			children = (
+				6B97CD291CC4193700DB6BB5 /* Frameworks */,
 				6B97CCDF1CC411A700DB6BB5 /* InstaClone */,
 				6B97CCF41CC411A700DB6BB5 /* InstaCloneTests */,
 				6B97CCFF1CC411A700DB6BB5 /* InstaCloneUITests */,
@@ -128,6 +163,25 @@
 			path = InstaCloneUITests;
 			sourceTree = "<group>";
 		};
+		6B97CD291CC4193700DB6BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B97CD121CC417B900DB6BB5 /* Alamofire.framework */,
+				6B97CD131CC417B900DB6BB5 /* AlamofireImage.framework */,
+				6B97CD141CC417B900DB6BB5 /* Appz.framework */,
+				6B97CD151CC417B900DB6BB5 /* Async.framework */,
+				6B97CD161CC417B900DB6BB5 /* Bolts.framework */,
+				6B97CD171CC417B900DB6BB5 /* Cent.framework */,
+				6B97CD181CC417B900DB6BB5 /* Dollar.framework */,
+				6B97CD191CC417B900DB6BB5 /* MBProgressHUD.framework */,
+				6B97CD1A1CC417B900DB6BB5 /* Parse.framework */,
+				6B97CD1B1CC417B900DB6BB5 /* SwiftValidator.framework */,
+				6B97CD1C1CC417B900DB6BB5 /* SwiftyJSON.framework */,
+				6B97CD101CC417A700DB6BB5 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,8 +190,9 @@
 			buildConfigurationList = 6B97CD051CC411A700DB6BB5 /* Build configuration list for PBXNativeTarget "InstaClone" */;
 			buildPhases = (
 				6B97CCD91CC411A700DB6BB5 /* Sources */,
-				6B97CCDA1CC411A700DB6BB5 /* Frameworks */,
 				6B97CCDB1CC411A700DB6BB5 /* Resources */,
+				6B97CCDA1CC411A700DB6BB5 /* Frameworks */,
+				6B97CD281CC4181400DB6BB5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +308,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B97CD281CC4181400DB6BB5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Appz.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Async.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cent.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Dollar.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Parse.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftValidator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B97CCD91CC411A700DB6BB5 /* Sources */ = {
@@ -403,6 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InstaClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chrisjmendez.InstaClone;
@@ -414,6 +499,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InstaClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chrisjmendez.InstaClone;

@@ -6,6 +6,8 @@
 //  Copyright © 2016 Chris Mendez. All rights reserved.
 //
 
+import Bolts
+import Parse
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        initParse(launchOptions!)
+        
         return true
     }
 
@@ -44,3 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate {
+    
+    func initParse(launchOptions: [NSObject: AnyObject]){
+        Parse.enableLocalDatastore()
+        
+        Parse.setApplicationId(Config.parse.APPLICATION_ID, clientKey: Config.parse.CLIENT_ID)
+        
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+    }
+}

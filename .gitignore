@@ -44,3 +44,5 @@ Carthage/Build
 # Application Specific
 .DS_Store
 InstaClone/Config.swift
+
+InstaClone/Config.swift

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B6E84E01CC48BDA000B9CF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84DF1CC48BDA000B9CF9 /* AudioToolbox.framework */; };
+		6B6E84E21CC48BEE000B9CF9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E11CC48BEE000B9CF9 /* CFNetwork.framework */; };
+		6B6E84E41CC48BF5000B9CF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E31CC48BF5000B9CF9 /* CoreGraphics.framework */; };
+		6B6E84E61CC48BFB000B9CF9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E51CC48BFB000B9CF9 /* CoreLocation.framework */; };
+		6B6E84E81CC48C00000B9CF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E71CC48C00000B9CF9 /* QuartzCore.framework */; };
+		6B6E84EA1CC48C06000B9CF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E91CC48C06000B9CF9 /* Security.framework */; };
+		6B6E84EC1CC48C0D000B9CF9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84EB1CC48C0D000B9CF9 /* StoreKit.framework */; };
+		6B6E84EE1CC48C15000B9CF9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84ED1CC48C15000B9CF9 /* libz.tbd */; };
+		6B6E84F01CC48C1D000B9CF9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84EF1CC48C1D000B9CF9 /* libsqlite3.tbd */; };
+		6B6E84F21CC48C24000B9CF9 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84F11CC48C24000B9CF9 /* Accounts.framework */; };
+		6B6E84F41CC48C2A000B9CF9 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84F31CC48C2A000B9CF9 /* Social.framework */; };
 		6B97CCE11CC411A700DB6BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97CCE01CC411A700DB6BB5 /* AppDelegate.swift */; };
 		6B97CCE31CC411A700DB6BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97CCE21CC411A700DB6BB5 /* ViewController.swift */; };
 		6B97CCE61CC411A700DB6BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B97CCE41CC411A700DB6BB5 /* Main.storyboard */; };
@@ -46,6 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B6E84DF1CC48BDA000B9CF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6B6E84E11CC48BEE000B9CF9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6B6E84E31CC48BF5000B9CF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B6E84E51CC48BFB000B9CF9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6B6E84E71CC48C00000B9CF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6B6E84E91CC48C06000B9CF9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6B6E84EB1CC48C0D000B9CF9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6B6E84ED1CC48C15000B9CF9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6B6E84EF1CC48C1D000B9CF9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6B6E84F11CC48C24000B9CF9 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6B6E84F31CC48C2A000B9CF9 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6B97CCDD1CC411A700DB6BB5 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B97CCE01CC411A700DB6BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B97CCE21CC411A700DB6BB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,16 +101,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6E84F01CC48C1D000B9CF9 /* libsqlite3.tbd in Frameworks */,
+				6B6E84EE1CC48C15000B9CF9 /* libz.tbd in Frameworks */,
+				6B6E84F21CC48C24000B9CF9 /* Accounts.framework in Frameworks */,
 				6B97CD1D1CC417B900DB6BB5 /* Alamofire.framework in Frameworks */,
 				6B97CD1F1CC417B900DB6BB5 /* Appz.framework in Frameworks */,
 				6B97CD201CC417B900DB6BB5 /* Async.framework in Frameworks */,
+				6B6E84E01CC48BDA000B9CF9 /* AudioToolbox.framework in Frameworks */,
 				6B97CD211CC417B900DB6BB5 /* Bolts.framework in Frameworks */,
 				6B97CD221CC417B900DB6BB5 /* Cent.framework in Frameworks */,
+				6B6E84E21CC48BEE000B9CF9 /* CFNetwork.framework in Frameworks */,
+				6B6E84E41CC48BF5000B9CF9 /* CoreGraphics.framework in Frameworks */,
+				6B6E84E61CC48BFB000B9CF9 /* CoreLocation.framework in Frameworks */,
 				6B97CD231CC417B900DB6BB5 /* Dollar.framework in Frameworks */,
 				6B97CD241CC417B900DB6BB5 /* MBProgressHUD.framework in Frameworks */,
 				6B97CD251CC417B900DB6BB5 /* Parse.framework in Frameworks */,
+				6B6E84E81CC48C00000B9CF9 /* QuartzCore.framework in Frameworks */,
 				6B97CD261CC417B900DB6BB5 /* SwiftValidator.framework in Frameworks */,
 				6B97CD271CC417B900DB6BB5 /* SwiftyJSON.framework in Frameworks */,
+				6B6E84F41CC48C2A000B9CF9 /* Social.framework in Frameworks */,
+				6B6E84EA1CC48C06000B9CF9 /* Security.framework in Frameworks */,
+				6B6E84EC1CC48C0D000B9CF9 /* StoreKit.framework in Frameworks */,
 				6B97CD111CC417A700DB6BB5 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +199,17 @@
 		6B97CD291CC4193700DB6BB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B6E84F31CC48C2A000B9CF9 /* Social.framework */,
+				6B6E84F11CC48C24000B9CF9 /* Accounts.framework */,
+				6B6E84EF1CC48C1D000B9CF9 /* libsqlite3.tbd */,
+				6B6E84ED1CC48C15000B9CF9 /* libz.tbd */,
+				6B6E84EB1CC48C0D000B9CF9 /* StoreKit.framework */,
+				6B6E84E91CC48C06000B9CF9 /* Security.framework */,
+				6B6E84E71CC48C00000B9CF9 /* QuartzCore.framework */,
+				6B6E84E51CC48BFB000B9CF9 /* CoreLocation.framework */,
+				6B6E84E31CC48BF5000B9CF9 /* CoreGraphics.framework */,
+				6B6E84E11CC48BEE000B9CF9 /* CFNetwork.framework */,
+				6B6E84DF1CC48BDA000B9CF9 /* AudioToolbox.framework */,
 				6B97CD121CC417B900DB6BB5 /* Alamofire.framework */,
 				6B97CD131CC417B900DB6BB5 /* AlamofireImage.framework */,
 				6B97CD141CC417B900DB6BB5 /* Appz.framework */,
@@ -575,6 +619,7 @@
 				6B97CD071CC411A700DB6BB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B97CD081CC411A700DB6BB5 /* Build configuration list for PBXNativeTarget "InstaCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +628,7 @@
 				6B97CD0A1CC411A700DB6BB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B97CD0B1CC411A700DB6BB5 /* Build configuration list for PBXNativeTarget "InstaCloneUITests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +637,7 @@
 				6B97CD0D1CC411A700DB6BB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

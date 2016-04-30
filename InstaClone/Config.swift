@@ -15,7 +15,7 @@ struct Config {
     }
     
     struct parse {
-        static let APPLICATION_ID = "PARSE_APP_ID"
-        static let CLIENT_ID      = "PARSE_CLIENT_ID"
+        static let APPLICATION_ID = "SmgVBKxagzSSBRM6N3ARGJaXwI8J5gtb1sEgILWX"
+        static let CLIENT_ID      = "VcPzB3hyiVbSB5KK6nGdQmPadqQN7Gt3vAwFGBSz"
     }
 }

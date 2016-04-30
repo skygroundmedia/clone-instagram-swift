@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        initParse(launchOptions!)
-        
+        /*
+        //A. Init Parse Framework
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId(Config.parse.APPLICATION_ID, clientKey: Config.parse.CLIENT_ID)
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        */
         return true
     }
 
@@ -51,11 +54,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     
-    func initParse(launchOptions: [NSObject: AnyObject]){
-        Parse.enableLocalDatastore()
-        
-        Parse.setApplicationId(Config.parse.APPLICATION_ID, clientKey: Config.parse.CLIENT_ID)
-        
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-    }
 }

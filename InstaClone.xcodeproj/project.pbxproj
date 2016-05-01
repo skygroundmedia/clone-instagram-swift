@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4914CA1CD6B6A500D6B909 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD131CC417B900DB6BB5 /* AlamofireImage.framework */; };
 		6B6E84E01CC48BDA000B9CF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84DF1CC48BDA000B9CF9 /* AudioToolbox.framework */; };
 		6B6E84E21CC48BEE000B9CF9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E11CC48BEE000B9CF9 /* CFNetwork.framework */; };
 		6B6E84E41CC48BF5000B9CF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E84E31CC48BF5000B9CF9 /* CoreGraphics.framework */; };
@@ -116,8 +117,9 @@
 			files = (
 				6B6E84F01CC48C1D000B9CF9 /* libsqlite3.tbd in Frameworks */,
 				6B6E84EE1CC48C15000B9CF9 /* libz.tbd in Frameworks */,
-				6B6E84F21CC48C24000B9CF9 /* Accounts.framework in Frameworks */,
 				6B97CD1D1CC417B900DB6BB5 /* Alamofire.framework in Frameworks */,
+				6B4914CA1CD6B6A500D6B909 /* AlamofireImage.framework in Frameworks */,
+				6B6E84F21CC48C24000B9CF9 /* Accounts.framework in Frameworks */,
 				6B97CD1F1CC417B900DB6BB5 /* Appz.framework in Frameworks */,
 				6B97CD201CC417B900DB6BB5 /* Async.framework in Frameworks */,
 				6B6E84E01CC48BDA000B9CF9 /* AudioToolbox.framework in Frameworks */,
@@ -406,6 +408,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Parse.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftValidator.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 			);

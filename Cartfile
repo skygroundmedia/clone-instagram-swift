@@ -1,4 +1,4 @@
-github "Alamofire/Alamofire"
+github "Alamofire/AlamofireImage" ~> 2.0
 github "SwiftKitz/Appz" ~> 1.5.0
 github "duemunk/Async"
 github "BoltsFramework/Bolts-iOS" 

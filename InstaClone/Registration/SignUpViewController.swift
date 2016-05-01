@@ -6,7 +6,11 @@
 //  Copyright © 2016 Chris Mendez. All rights reserved.
 //
 
+import Alamofire
+import AlamofireImage
+import SwiftyJSON
 import UIKit
+
 class SignUpViewController: UIViewController {
 
    
@@ -30,7 +34,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signupButton: Button!
     @IBOutlet weak var cancelButton: UIButton!
     
-    
     @IBAction func onSignup(sender: AnyObject) {
     }
     
@@ -38,8 +41,9 @@ class SignUpViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    weak var activeField:TextField?
+    let UI_FACES = "http://uifaces.com/api/v1/random"
 
+    weak var activeField:TextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,22 +51,42 @@ class SignUpViewController: UIViewController {
         scrollView.contentSize.height = self.view.frame.height
         
         listenToKeyboard()
+        listenToGestures()
+        
+        getJSON(UI_FACES)
     }
 }
 
-//KEYBOARD RELATED FUNCTIONS
-extension SignUpViewController {
+//MARK: - JSON
+extension SignUpViewController{
+    func getJSON(url:String){
+        Alamofire.request(.GET, url, parameters: nil).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                let data = response.result.value as? NSDictionary
+                let json = JSON(data!)
+                self.parseJSON(json)
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
     
+    func parseJSON(json:JSON){
+        let imageURL = String(json["image_urls"]["epic"])
+        let url = NSURL(string: imageURL)!
+        let placeholderImage = UIImage(named: "profile")!
+        
+        userIcon.af_setImageWithURL(url, placeholderImage: placeholderImage)
+    }
+}
+
+//#MARK: - KEYBOARD RELATED FUNCTIONS
+extension SignUpViewController {
     func listenToKeyboard(){
         //Check to see if keyboard is shown or not
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardDidShow(_:)), name: UIKeyboardDidShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillBeHidden(_:)), name: UIKeyboardWillHideNotification, object: nil)
-        
-        //Hide Keyboard if tapped
-        let hideTap = UITapGestureRecognizer(target: self, action: #selector(self.onKeyboardTap(_:)))
-            hideTap.numberOfTapsRequired = 1
-        //self.view.userInteractionEnabled = true
-        //self.view.addGestureRecognizer(hideTap)
     }
     
     func onKeyboardTap(recognizer:UITapGestureRecognizer){
@@ -90,7 +114,15 @@ extension SignUpViewController {
     }
 }
 
+//#TODO: - TextFields and Gestures
 extension SignUpViewController:UITextFieldDelegate  {
+    func listenToGestures(){
+        //Hide Keyboard if tapped
+        let hideTap = UITapGestureRecognizer(target: self, action: #selector(self.onKeyboardTap(_:)))
+        hideTap.numberOfTapsRequired = 1
+        //self.view.userInteractionEnabled = true
+        //self.view.addGestureRecognizer(hideTap)
+    }
     
     func textFieldDidEndEditing(textField: UITextField) {
         self.activeField = nil

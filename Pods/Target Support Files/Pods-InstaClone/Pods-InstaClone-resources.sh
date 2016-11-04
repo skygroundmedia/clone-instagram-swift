@@ -80,9 +80,19 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "FirebaseInvites/Frameworks/frameworks/FirebaseInvites.framework/Resources/GINInviteResources.bundle"
+  install_resource "FirebaseInvites/Frameworks/frameworks/FirebaseInvites.framework/Resources/GPPACLPickerResources.bundle"
+  install_resource "FirebaseInvites/Resources/frameworks/FirebaseInvites.framework/Resources/GINInviteResources.bundle"
+  install_resource "FirebaseInvites/Resources/frameworks/FirebaseInvites.framework/Resources/GPPACLPickerResources.bundle"
+  install_resource "GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "FirebaseInvites/Frameworks/frameworks/FirebaseInvites.framework/Resources/GINInviteResources.bundle"
+  install_resource "FirebaseInvites/Frameworks/frameworks/FirebaseInvites.framework/Resources/GPPACLPickerResources.bundle"
+  install_resource "FirebaseInvites/Resources/frameworks/FirebaseInvites.framework/Resources/GINInviteResources.bundle"
+  install_resource "FirebaseInvites/Resources/frameworks/FirebaseInvites.framework/Resources/GPPACLPickerResources.bundle"
+  install_resource "GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 

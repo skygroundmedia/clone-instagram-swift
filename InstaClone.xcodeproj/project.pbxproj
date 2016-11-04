@@ -34,7 +34,6 @@
 		6B97CD221CC417B900DB6BB5 /* Cent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD171CC417B900DB6BB5 /* Cent.framework */; };
 		6B97CD231CC417B900DB6BB5 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD181CC417B900DB6BB5 /* Dollar.framework */; };
 		6B97CD241CC417B900DB6BB5 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD191CC417B900DB6BB5 /* MBProgressHUD.framework */; };
-		6B97CD251CC417B900DB6BB5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1A1CC417B900DB6BB5 /* Parse.framework */; };
 		6B97CD261CC417B900DB6BB5 /* SwiftValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1B1CC417B900DB6BB5 /* SwiftValidator.framework */; };
 		6B97CD271CC417B900DB6BB5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B97CD1C1CC417B900DB6BB5 /* SwiftyJSON.framework */; };
 		DEDF13FB57BCB0DAB541936B /* libPods-InstaClone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B5444D331D5955E7F46853 /* libPods-InstaClone.a */; };
@@ -119,7 +118,6 @@
 				6B6E84E61CC48BFB000B9CF9 /* CoreLocation.framework in Frameworks */,
 				6B97CD231CC417B900DB6BB5 /* Dollar.framework in Frameworks */,
 				6B97CD241CC417B900DB6BB5 /* MBProgressHUD.framework in Frameworks */,
-				6B97CD251CC417B900DB6BB5 /* Parse.framework in Frameworks */,
 				6B6E84E81CC48C00000B9CF9 /* QuartzCore.framework in Frameworks */,
 				6B97CD261CC417B900DB6BB5 /* SwiftValidator.framework in Frameworks */,
 				6B97CD271CC417B900DB6BB5 /* SwiftyJSON.framework in Frameworks */,
@@ -419,7 +417,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Cent.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Dollar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Parse.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftValidator.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);

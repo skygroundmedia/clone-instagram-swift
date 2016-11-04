@@ -7,7 +7,6 @@
 //
 
 
-import Parse
 import UIKit
 
 @UIApplicationMain
@@ -17,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        initParse(launchOptions!)
         
         return true
     }
@@ -51,11 +48,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     
-    func initParse(_ launchOptions: [AnyHashable: Any]){
-        Parse.enableLocalDatastore()
-        
-        Parse.setApplicationId(Config.parse.APPLICATION_ID, clientKey: Config.parse.CLIENT_ID)
-        
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-    }
 }

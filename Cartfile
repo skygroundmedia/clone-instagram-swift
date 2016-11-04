@@ -1,9 +1,26 @@
+#Image Loading
 github "Alamofire/AlamofireImage" ~> 3.1
-github "ankurp/Cent" ~> 6.1.0
+
+#Arrays
+github "ankurp/Cent" ~> 6.0.2
+
+#Dictionaries
 github "ankurp/Dollar" ~> 6.1.0
+
+#Low-level libraries
 github "BoltsFramework/Bolts-iOS" 
+
+#Promises
 github "duemunk/Async" "2.0.0"
-github "SwiftKitz/Appz" ~> 1.5.0
+
+#Deep Linking
+github "SwiftKitz/Appz" 
+
+#Progress Bar
 github "jdg/MBProgressHUD" ~> 0.9.2
+
+#Form Validation
 github "jpotts18/SwiftValidator"
+
+#JSON
 github "SwiftyJSON/SwiftyJSON"
